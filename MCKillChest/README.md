@@ -1,29 +1,7 @@
-# README #
+# KillChest #
+A way to reward players for killing or acquiring chests. Adds some danger to the area by making certain chests require certain actions
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+## Chests ##
+* TimerChest - Will open after the timer hits 0, then will despawn after a minute.
+* SoulChest - Will only open for a player who has killed a certain number of players/entities
+* TiggerChest - Will only open after an event has taken place (IN PROGRESS)
