@@ -1,6 +1,0 @@
-main: com.terturl.ZombieMinigame.ZombieMinigame
-name: MCZombieSurvival
-author: terturl
-version: 1.0
-api-version: 1.16
-depend: [MeleeCraftEssentials]
