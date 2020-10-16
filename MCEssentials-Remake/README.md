@@ -92,3 +92,62 @@ Can be used to add objects to the MySQL database. (This is an INSERT function no
 insert(p.getUniqueID().toString(), 0);
 ~~~~
 Creates the UUID and gives the player 0 coins.
+### Inventory ###
+#### InventoryButton ####
+Works as a clickable button inside of an inventory.
+##### Creating a button #####
+~~~~
+ItemStack item = new ItemStack(Material.STICK);
+InventoryButton ib = new InventoryButton(item) {
+  @Override
+  public void onPlayerClick(Player p, ClickAction a) {
+    // Function of button here
+    // Can use ClickAction to see if they left-clicked or right-clicked the item
+  }
+}
+~~~~
+This will create an inventory button with a Stick as the display item.
+#### InventoryUI ####
+  This class handles how an inventory will be displayed, controlled, and who can open/close it.
+  ##### Creation #####
+  ~~~~
+  public class TestInv extends InventoryUI {
+    public TestInv() {
+      super(27, "This is a test inv");
+    }
+  }
+  ~~~~
+  This will create an inventory with title "This is a test inv" with 27 slots.
+  ##### Adding buttons #####
+  ~~~~
+  addButton(InventoryButton); // Will add the button to the next available slot (or -999 if there is no slot for it)
+  addButton(InventoryButton, 0); // Will add the button to the given slot (will replace if it has too)
+  updateInventory(); // Always call at the end of the function to make sure the buttons were added
+  ~~~~
+  ##### Remove button #####
+  ~~~~
+  removeButton(InventoryButton); // Will find and remove the button
+  clearSlot(0); // Will remove the button at slot 0
+  updateInventory(); // Always call at the end of the function to make sure the buttons were updated/removed
+  ~~~~
+  ##### Open inventory for a player #####
+  ~~~~
+  TestInv inv = new TestInv();
+  inv.open(Player);
+  ~~~~
+  ##### Close inventory for a player #####
+  ~~~~
+  inv.close(Player);
+  ~~~~
+  It is recommended to close like this instead of p.closeInventory(); As using the close() function will make sure to de-register any handlers and work on the garbage collection of the inventory
+  #### PageableInventoryManager ####
+  This is a class that will allow for the creation of multiple inventories strung together using next and back buttons to create a better menu. It will dynamically create the pages based on the amount of InventoryButtons given during its creation and size.
+  ##### Usage #####
+  ~~~~
+  PageableInventoryManager pim = new PageableInventoryManager(18, "Super Awesome Pages", List<InventoryButton>);
+  pim.open(Player)
+  ~~~~
+  #### Minigames ####
+  **IN PROGRESS**
+  The goal of this is to be able to create a way to dynamically create as many minigame instances as is needed for the minigame plugins using Generics. The problem currently stands with the world creation and arena handling. Currently, this can be used to create kits, a kit selection screen, and arena with an arena handler. More will be added to this when I am able to develop more.
+  
