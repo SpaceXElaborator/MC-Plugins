@@ -1,0 +1,5 @@
+main: com.terturl.SurvivalPlugin.Main
+name: SMPPlugin
+author: Terturl
+version: 0.1
+api-version: 1.15

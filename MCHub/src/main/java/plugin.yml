@@ -1,0 +1,6 @@
+main: com.terturl.MCHub.MCHub
+name: MCHub
+author: terturl
+version: A_0.9.4-PRE
+depend: [MeleeCraftEssentials]
+api-version: 1.15

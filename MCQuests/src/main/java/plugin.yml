@@ -1,0 +1,6 @@
+main: com.terturl.MeleeCraftQuests.Main
+name: MeleeQuests
+author: terturl
+version: B_1.8.1-DEV
+api-version: 1.15
+depend: [MeleeCraftEssentials]
