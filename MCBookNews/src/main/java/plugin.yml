@@ -1,0 +1,6 @@
+name: MCBookNews
+author: terturl
+main: com.terturl.BookNews.BookNews
+version: A-1.0.1-DEV
+api-version: 1.15
+depend: [MeleeCraftEssentials]
