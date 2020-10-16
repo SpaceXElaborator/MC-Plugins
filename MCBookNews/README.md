@@ -1,29 +1,19 @@
-# README #
+# MCBookNews #
+Still a work in progress. CreateBooks.java is being redone and moved to BookManager.java
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### Summary ###
+BookNews is a standalone application that only requires the MCEssentials to work.
+The premise of the plugin is to create a configuration that will load a random book into the 
+players inventory to view special news in a fun way.
 
-### What is this repository for? ###
+### Issues ###
+CreateBooks.java
+* Poorly written
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+BookManager.java
+* Has some issues when loading commands or loading suggested commands
 
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### Plans ###
+* Redo BookManager.java
+* Move to JSON loading
+* No longer use REGEX to load strings
