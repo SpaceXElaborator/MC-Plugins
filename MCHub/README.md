@@ -1,29 +1,6 @@
-# README #
+# Hub #
+This is a quick and fun little Hub plugin to control what happens on the main server. A minigame is added and some listeners/events for shits and giggles.
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+## TODO ##
+* Make sure to add listeners to check for cheating players
+* Make HeadHunter into a .json file instead of multiple files
